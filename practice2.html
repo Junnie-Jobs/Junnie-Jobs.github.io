@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>css practice</title>
+    <meta charset="utf-8">
+ <link rel ="stylesheet"  type="text/css" href="./practice.css">
+</head>
+<body>
+ <input type="checkbox" id="hambergers" class="hamberger" href="">
+    <label for="hambergers"></label>
+    <div class="front">
+      <div class="main-title">Web UI Basic Homework</div>
+      <article id="q2" class="q2" >
+        <div class="q2-title">HW2.  XHTML에서 CDATA 섹션을 둔 이유는?</div>
+      <div class="q2-contents">
+        <p>CDATA는 xml문서에서 script 안에 들어있는 특수문자들을 일부 웹 브라우저가, xml태그로 인식하는 것을 막기 위해서 제공되었다. 만약브라우저가 xhtml로 인식하여 CDATA문법을 읽어들인다면 문제가 없지만, 만약 XML태그로 인식한다면 오류가 발생하게 된다. 또한 만약 이 페이지를  HTML로 웹브라우저가 인식하게 되면, CDATA[] 이 문법 자체를 자바 스크립트는 해석하지 못하고 오류가 발생하기 때문에 주석문구인 '//'을 이용해서 자바스크립트가 해석하지 못하도록 처리했다.</p>
+        
+      </div>
+      </article>
+      <div id="q3" class="cover q2-cover"></div>    
+      <article class="q3">
+        <div class="q3-title">HW3.  script 태그의 language 속성 폐지 시점은 ?</div>
+      <div class="q3-contents">
+        <p>
+            script language&rt; 속성은 HTML 3.2를 통해 소개되었으나, HTML4.0이 표준화되면서 규격에서 폐지 예정 처리 되었다. <p>(참조:http://stackoverflow.com/questions/8734372/difference-between-script-type-and-script-language-declarations)</p>
+        </p>
+      </div>  
+        <div class="cover q3-cover"></div>        
+      </article>  
+    </div>
+    <div class="back">
+        <div class="menu-title">List</div>
+        <div class="menu-title-bar"></div>
+        <div class="menu-group">
+            <!--menu1-->
+            <input type="checkbox" class="click-me" id="click-me">
+            <label for="click-me">[Second]</label>
+            <div id="menu1" class="menu"></div>
+          
+            <ul id="click-me-hidden" class="hidden-menues">
+                <li class="hidden-menu" id="click-hidden-menu1"><a href="#q2" class="q2-anchor anchor">Question 2</a></li>
+            </ul>
+            <!--menu2-->
+            <div id="menu2" class="menu">
+                <div class="hover-me">[Third]</div>
+          
+                <ul id="hover-me-hidden" class="hidden-menues">
+            
+                    <li class="hidden-menu" id="hover-hidden-menu2"><a href="#q3" class="q3-anchor anchor">Question 3</a></li>
+                </ul>
+                <div class="hidden-cover"></div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+  </html>
