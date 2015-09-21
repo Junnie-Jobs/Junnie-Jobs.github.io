@@ -35,7 +35,7 @@ for(var i=0 ; i<post.length ; i++){
 };
 
 
-/* 무한 스크롤 */
+/* 무한 스크롤부분 */
 
 var body = document.querySelector("body");
 var middle = document.querySelector(".middle");
@@ -50,7 +50,7 @@ function newPostAnimation(newPost){
 window.addEventListener("scroll", function(){
 
 	var random = Math.ceil(Math.random()*7);
-	var url = "url('http://junniejobs.github.io/" + random + ".png')";
+	var url = "url('http://Junnie-Jobs.github.io/imgs/" + random + ".png')";
 	var lastPost = middle.lastElementChild;
 	var lastPostPos = lastPost.offsetTop - window.scrollY;
 	console.log(lastPostPos);
