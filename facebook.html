@@ -1,51 +1,126 @@
-<!DOCTYPE html> 
-<html lang="ko"> 
-<head> 
-  <meta charset="utf-8"> 
-  <title>Facebook</title> 
-  <link rel="stylesheet" href="./face.css"> 
-</head> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>facebook</title>
+	<link rel="stylesheet" type="text/css" href="facebook.css">
+	<link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico">
+</head>
 <body>
-  <div class="header">
-    <div class="header_container">
-      <a class="top_logo">Facebook</a>
-      <input type="text" class="header_search" placeholder="궁금한 친구나 장소를 검색해보세요.">
-      <img src="http://postfiles8.naver.net/20150803_231/dj0999_14385698971262HVAo_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-08-03_%BF%C0%C0%FC_11.36.37.png?type=w2">
-    </div>    
-  </div>
-  <div class="content">
-    <div class="content_container">
-      <div class="left">
-        <div class="profile">
-          <img src="http://postfiles7.naver.net/20150803_70/dj0999_1438569765892MqxVg_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-08-03_%BF%C0%C0%FC_11.42.17.png?type=w2">
-          <div class="name">Dongjun Lim</div>
-          <div class="edit">프로필 편집</div>
-        </div>
-        <ul class="left_list">
-           <li class="left_tag">즐겨찾기</li>
-          <li><i class="icon_newspeed"></i>뉴스피드</li>
-          <li><i class="icon_message"></i>메세지</li>
-          <li><i class="icon_event"></i>이벤트</li>
-          
-          <li class="left_tag">그룹</li>
-          <li><i class="icon_newspeed"></i>NEXT사제지간</li>
-          <li><i class="icon_message"></i>NA우리NEXT</li>
-          <li><i class="icon_event"></i>생활코딩</li>
-          
-          <li class="left_tag">페이지</li>
-          <li><i class="icon_newspeed"></i>페이지피드<newnum>3</newnum></li>
-          <li><i class="icon_message"></i>페이지 좋아요<newnum>11</newnum></li>
-          <li><i class="icon_event"></i>페이지 만들기</li>
-        </ul>
-      </div>
-      <div class="center">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-      </div>
-      <div class="right"></div>
-    </div>
-  </div>
-
+	<header class="top">
+		<div class="top_menus">
+			<span class="logo"><a href=""></a></span>
+			<span class="search">
+				<form action="" method="get">
+					<input type="text" class="searchbox" placeholder="궁금한 친구나 장소를 검색해보세요.">
+					<button type="submit" class="searchbutton"></button>
+				</form>
+			</span>
+			<span class="top_buttons">
+				<span class="top_profile">
+			
+					<a class="top_name" href="">임동준</a>
+				</span>
+				<span class="top_icons">
+					<span>
+						<a class="top_home_char" href="">홈</a>
+					</span>
+					<span>
+						<a class="top_friend" href=""></a>
+					</span>
+					<span class="top_message">
+						<a href=""></a>
+					</span>
+					<span class="top_notice">
+						<a href=""></a>
+					</span>
+				</span>	
+				<span class="top_privacy">
+					<a href=""></a>
+				</span>
+				<span class="top_etc">
+					<a href=""></a>
+				</span>				
+			</span>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main_contents">
+			<div class="left">
+				<div class="left_profile">
+					<img class="left_photo" src="http://postfiles7.naver.net/20150803_70/dj0999_1438569765892MqxVg_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-08-03_%BF%C0%C0%FC_11.42.17.png?type=w2">
+					<div class="left_name_edit">
+						<a class="left_name">임동준</a>
+						<a class="left_edit">프로필 편집</a>
+					</div>
+				</div>
+				<div class="left_menus">
+					<ul class = "left_sub_menus">
+						<li class="left_sub_sub_menus">
+							<div class="icons newspeed"></div>
+							<span class="icon_name">  뉴스피드</span>
+						</li>
+						<li class="left_sub_sub_menus">
+							<div class="icons message"></div>
+							<span class="icon_name">  메시지</span>
+						</li>
+						<li class="left_sub_sub_menus">
+							<div class="icons event"></div>
+							<span class="icon_name">  이벤트</span>
+						</li>
+						<li class="left_sub_sub_menus">
+							<div class="icons albums"></div>
+							<span class="icon_name">  사진</span>
+						</li>
+						<li class="left_sub_sub_menus">
+							<div class="icons saved"></div>
+							<span class="icon_name">  저장됨</span>
+						</li>
+					</ul>
+					<ul class = "left_sub_menus">
+						<div class="left_group_title">그룹</div>
+						<li class="left_sub_sub_menus">
+						<div class="icons newspeed"></div>
+							<span class="icon_name">  NEXT 사제지간  
+							</span>
+						</li>
+					</ul>				
+				</div>
+			</div>
+			<div class="middle">
+				<div class="post" id="post0"></div>			
+				<div class="post">
+					<div class="post-editor-info" id="post-editor-info1"></div>
+					<div class="post-contents" id="post-contents1"></div>
+					<div class="like-reply-share">
+						<div class="like-reply-share-counts">
+							<span class="like-counts">좋아요 0개</span>
+							<span class="reply-counts">댓글 0개</span>
+							<span class="share-counts">공유 0개</span>
+						</div>
+						<div class="like-reply-share-buttons">
+							<span class="lrsButton like-button">
+								<i class="like-icon"></i>
+								<a class="like-text">좋아요</a>
+							</span>
+							<span class="lrsButton reply-button">
+								<i class="reply-icon"></i>
+								<a class="like-text">댓글달기</a>
+							</span>
+							<span class="lrsButton share-button">
+								<i class="share-icon"></i>
+								<a class="like-text">공유하기</a>
+							</span>			
+						</div>									
+					</div>
+				</div>
+				</div>		
+			</div>
+			<div class="right">
+				<div class="ad"></div>
+			</div
+		</div>
+	</main>
+	<script type="text/javascript" src="facebook.js"></script>
 </body>
 </html>
