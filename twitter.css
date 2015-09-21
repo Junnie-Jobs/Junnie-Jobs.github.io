@@ -39,14 +39,22 @@ position: relative;
 }
 
 .logo{
-  width: 290px;
+  width: 145px;
   height: 50px;
+  margin-left: 20px;
   position: absolute;
   margin-bottom: 0px;
   border-bottom: 0px;
   padding-bottom: 0px;
-  background-image: url(http://postfiles3.naver.net/20150921_274/dj0999_1442824563750ft9Ch_PNG/headerIcon.png?type=w2);
+  background-image: url(http://postfiles5.naver.net/20150921_116/dj0999_1442824244361jLIV6_PNG/1.png?type=w2);
   background-position: -5px 0px;
+
+}
+
+.top_photo{
+  width: 40px;
+  height: 40px;
+  margin-left: 500px;
 
 }
 
@@ -128,7 +136,7 @@ background-image: url(http://postfiles7.naver.net/20150921_262/dj0999_1442820539
   background-color: rgba(223,239,232,1);
   border: 1px solid rgba(100,100,100,0.2);
   border-radius: 4px;
-  transition: opacity 200ms;
+  transition: opacity 100ms;
   transition-timing-function: ease-in-out;
 }
 
@@ -141,34 +149,7 @@ background-image: url(http://postfiles7.naver.net/20150921_262/dj0999_1442820539
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(100,100,100,0.2);
   border-radius: 4px;
-  transition: opacity 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-.post2{
-
-  display: block;
-  margin: 0px 12px 0px 130px;
-  padding-top: 0px;
-  width: 590px;
-  height: 100px;
-  background-image: url(http://postfiles8.naver.net/20150921_247/dj0999_1442827658758sk8mN_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-09-21_%BF%C0%C8%C4_6.27.03.png?type=w2);
-  border: 1px solid rgba(100,100,100,0.2);
-  border-radius: 4px;
-  transition: opacity 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-.post3{
-
-  display: block;
-  margin: 0px 12px 0px 130px;
-  padding-top: 120px;
-  width: 590px;
-  background-image: url(http://postfiles8.naver.net/20150921_39/dj0999_1442830966244TaoOf_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-09-21_%BF%C0%C8%C4_7.22.06.png?type=w2);
-  border: 1px solid rgba(100,100,100,0.2);
-  border-radius: 4px;
-  transition: opacity 2000ms;
+  transition: opacity 100ms;
   transition-timing-function: ease-in-out;
 }
 
@@ -254,12 +235,13 @@ background: url("http://postfiles13.naver.net/20150921_300/dj0999_1442834861292f
   cursor : pointer;
 }
 .reply-counts{
-  margin-left: 8px;
+  margin-left: -5px;
 
   cursor : pointer;
 }
 .share-counts{
   margin-right: 8px;
+
   cursor : pointer;
 }
 .like-reply-share-buttons{
