@@ -4,70 +4,104 @@
   <meta charset="utf-8"> 
   <title>Twitter</title> 
   <link rel="stylesheet" href="./twitter.css"> 
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
 
 </head> 
 <body>
  
-  <header class="top">
-  	<div class="top_menus">
-  		<span class="logo">
-  		</span>
-  		<img class="top_photo" href src="http://postfiles15.naver.net/20150921_158/dj0999_1442839032067P6ccs_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2015-09-21_%BF%C0%C8%C4_9.36.42.png?type=w2" align="center">
-  		</span>
-  		  	</div>
 
 
- </header>
-
- <main class ="main">
- 	<div class="main_contents">
- 		<div class="left">
- 			<div class="left_profile"></div>
- 	</div>
-
- 	<div class="middle">
-
- 		<div class="postgreen" id="post0">
- 			<form action method="get">
- 				<div class="post_editor_info_mine"></div>
- 				<input type="text" class="searchbox" placeholder="    무슨 일이 일어나고 있나요?">
- 			</form>
- 		</div>
-
- 		<div class="post">
- 			<div class="post-contents"></div>
- 		<div class="like-reply-share">
-						<div class="like-reply-share-counts">
-							<!--<span class="like-counts">0</span>-->
-							
-						<div class="like-reply-share-buttons">
-							<span class="lrsButton like-button">
-								<i class="like-icon"></i> <!--reply icon-->
-							</span>
-							<span class="lrsButton reply-button">
-								<i class="reply-icon"></i> <!--retwitt icon-->
-							</span>
-							<span class="reply-counts">0</span>
-
-
-							<span class="lrsButton share-button">
-								<i class="share-icon"></i><!--favorite icon--><span class="share-counts"> 0</span>
-								
-							</span>			
-							</div>
-						</div>									
+	<header class="header">
+		<div class="container">
+			<div class="main-icons">
+				<div class="top-icons home">
+					<i class="icon home-icon"></i>Home
+				</div>
+				<div class="top-icons notification">
+					<i class="icon noti-icon"></i>Notification
+				</div>
+				<div class="top-icons message">
+					<i class="icon message-icon"></i>Messages
+				</div>
+			</div>
+			<i class="twitter-icon"></i>
+		</div>
+	</header>
+	
+	<main class="main">
+		<div class="profile">
+			<div class="upper"></div>
+			<div class="bottom">
+				<div class="names">
+					<div class="name1">Kim Kibeom</div>
+					<div class="name2">@kiboom</div>
+				</div>
+				<div class="infos">
+					<div class="info-title tweets">TWEETS
+						<div class="number">423</div>
 					</div>
- 		</div>
-
-
- 	
- 	</div>
- 	
-
-
-</main>
-
-
-<script type="text/javascript" src="twitter.js"></script>
+					<div class="info-title following">FOLLOWING
+						<div class="number">27</div>
+					</div>
+					<div class="info-title followers">FOLLOWERS
+						<div class="number">415</div>
+					</div>
+				</div>
+			</div>
+			<img class="thumbnail" src="http://postfiles10.naver.net/20150922_249/dj0999_1442903992473Spgdb_PNG/profile.png?type=w2">
+		</div>
+		<div class="timeline">
+			<div class="posting">
+				<form action="http://api.taegon.kim/posts" method="post">
+					<div class="input-area">
+						<div class ="textinput">
+							<img class="thumbnail" src="http://postfiles10.naver.net/20150922_249/dj0999_1442903992473Spgdb_PNG/profile.png?type=w2">
+							<input class="content" name="content" type="textbox" placeholder="무슨 일이 일어나고 있나요?">
+							<div class="button-area">
+						<span class="character-num">121</span>
+						<button class="tweeting">
+							<img class="tweeting-icon" src="http://i57.tinypic.com/9kyzyb.png">Tweet
+						</button>
+					
+							<input name="username" type="hidden" value="임동">
+						</div>
+					</div>  
+					
+					
+				</form>
+			</div>
+			<div class="posts" id="posts">
+				<div class="post">
+					<img class="thumbnail" src="http://postfiles10.naver.net/20150922_249/dj0999_1442903992473Spgdb_PNG/profile.png?type=w2">
+					<div class="right-side">
+						<div class="names">
+							<span class="name1">Nickname</span>
+							<span class="name2">@twitter</span>
+							<span class="posting-time">· 1h</span>
+						</div>
+						<div class="contents" id="contents0"></div>
+						<div class="functions">
+							<span class="share">
+								<i class="fa fa-share"></i>
+								<span class="share-num"></span>
+							</span>
+							<span class="retweet">
+								<i class="fa fa-retweet"></i>
+								<span class="retweet-num">27</span>
+							</span>
+							<span class="favorite">
+								<i class="fa fa-star"></i>
+								<span class="favorite-num">58</span>
+							</span>
+							<span class="etc">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="twitter.js"></script>
 </body>
 </html>

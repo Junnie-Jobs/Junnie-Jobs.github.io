@@ -1,39 +1,27 @@
-var reply = 0;
-var share = 0;
-
-var post = document.getElementsByClassName("post");
-
-var likeCounts = document.querySelector(".like-counts");
-var replyCounts = document.querySelector(".reply-counts");
-var shareCounts = document.querySelector(".share-counts");
-
-var plusCounts = function(e) {
-    var span = e.target.closest('span');
-    if(span.className == "lrsButton like-button" || span.className == "lrsButton like-button lrsButton-clicked"){
-        var likeCounts = this.querySelector(".like-counts");
-        likeCounts.innerHTML =(++like);
-        span.classList.toggle("lrsButton-clicked");
-        span.firstElementChild.classList.toggle("liked-icon");
-    } 
-    else if(span.className == "lrsButton reply-button" || span.className == "lrsButton reply-button lrsButton-clicked"){
-        var replyCounts = this.querySelector(".reply-counts");      
-        replyCounts.innerHTML = (++reply);
-        span.classList.toggle("lrsButton-clicked");
-    } 
-    else{
-        var shareCounts = this.querySelector(".share-counts");      
-        shareCounts.innerHTML =(++share);
-        span.classList.toggle("lrsButton-clicked");
+function getContents(random) {
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-};
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var obj = JSON.parse(xmlhttp.responseText);
+            document.getElementById("contents0").innerHTML = obj.posts[0].content;
+        }
+    }
+    xmlhttp.open("GET", "http://api.taegon.kim/posts/page/" + (Math.floor(Math.random()*10)+1) , true);
+    xmlhttp.send();
+}
+getContents(0);
 
-for(var i=0 ; i<post.length ; i++){
-    post[i].addEventListener("click", plusCounts, false);
-};
 
+
+/*무한스크롤*/
 
 var body = document.querySelector("body");
-var middle = document.querySelector(".middle");
+var middle = document.querySelector(".posts");
 var triggerScoll = window.innerHeight * 1.5;
 
 function newPostAnimation(newPost){
@@ -52,31 +40,10 @@ window.addEventListener("scroll", function(){
 
     if(lastPostPos < window.innerHeight/2){
         var newPost = lastPost.cloneNode(true);
-        var postContents = newPost.querySelector(".post-contents");
+        var postContents = newPost.querySelector(".post");
         middle.appendChild(newPost);
         newPost.addEventListener("click", plusCounts, false);       
         newPostAnimation(newPost);
         postContents.style.background = url;
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
