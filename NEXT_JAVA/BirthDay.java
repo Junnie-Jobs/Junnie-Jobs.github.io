@@ -52,7 +52,7 @@ public class BirthDay {
 
 	public void setYear() {
 		if(this.year<0)
-			System.out.println(this.year+"년 "+this.month+"월 "+this.day+"일은 아직 오지 않은 시간입니다.");
+			System.out.println(this.year+"년 "+this.month+"월 "+this.day+"일은 기원전입니다.");
 			
 	}
 	
